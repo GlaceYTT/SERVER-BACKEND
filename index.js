@@ -2,11 +2,10 @@ const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
 const cors = require('cors');
-const fs = require('fs');
 const path = require('path');
 
 dotenv.config();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 10000;
 
 const expectedCommandsCount = 94;
 let serverOnline = true;
@@ -94,6 +93,7 @@ app.get('/', (req, res) => {
     const imagePath = path.join(__dirname, 'index.html');
     res.sendFile(imagePath);
 });
-app.listen(PORT, () => {
-    console.log(`Server is running on http://Shiva:${PORT}`);
+
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server is running on http://0.0.0.0:${PORT}`);
 });
