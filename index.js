@@ -7,7 +7,7 @@ const path = require('path');
 dotenv.config();
 const PORT = process.env.PORT || 10000;
 
-const expectedCommandsCount = 94;
+const expectedCommandsCount = 95;
 let serverOnline = true;
 
 app.use(cors());
@@ -34,24 +34,24 @@ app.get('/api/commands', (req, res) => {
     const commands = [
         {
             name: 'checkupdate',
-            description: 'Your Bot is up to Date',
+            description: 'update',
             embed: {
-                title: 'Thank You For Choosing Our Bot',
-                description: 'Current Bot status are noted below.',
+                title: 'Please Verify below details!',
+                description: '- When new update will be out we provide a zip file.\n- It will have code files and a manual to update your bot.\n- For help feel free to join our discord server.\n- Discord server : https://discord.gg/xQF9f9yUEM',
                 fields: [
-                    { name: 'Version : ', value: '@1.0.0' },
-                    { name: 'Required Node Version : ', value: 'v20' },
-                    { name: 'Required Discord.js : ', value: 'v14.15.3' },
-                    { name: 'Last Updated:', value: 'July 30, 2024' }
+                    { name: 'Version : ', value: '```@1.0.0```' },
+                    { name: 'Required Node Version : ', value: '```v20```' },
+                    { name: 'Required Discord.js : ', value: '```v14.15.3```' },
+                    { name: 'Last Updated:', value: '```August 07 , 2024```' }
                 ],
-                image: 'https://cdn.discordapp.com/attachments/1250804281989398631/1256588272025735178/kazuha-torii-autumn-genshin-impact-thumb.jpg?ex=66815086&is=667fff06&hm=60dcc5aa0586193c03de72b662d260ad008d3b03ff30234c6b41bffc7bc1128e&',
+                image: 'https://cdn.discordapp.com/attachments/1264134884432285766/1270352605154902151/GlaceYT.gif?ex=66b40c4f&is=66b2bacf&hm=c1544d1e4583754696cbaab1e74d209159e5b243adaa4660eebc2629810715c6&',
                 color: 0x0099ff,
                 footer: {
-                    text: 'Bot Update Checker',
+                    text: 'GlaceYT',
                     icon_url: 'https://cdn.discordapp.com/attachments/1230824451990622299/1252165467842416680/1667-yellow-gears.gif?ex=669f5df7&is=669e0c77&hm=0da406182e78db73b507185291c7b3587ae3266e6ac1d695ffa3ee5b50d89516&'
                 },
                 author: {
-                    name: 'ALL IN ONE [ GlaceYT ]',
+                    name: 'ALL IN ONE',
                     icon_url: 'https://cdn.discordapp.com/attachments/1246408947708072027/1264892723484168243/70404-crown.gif?ex=669f86a5&is=669e3525&hm=3deb231dec0b6495843c372013032366846565a5b1668223fc0448496ef7e154&'
                 }
             }
