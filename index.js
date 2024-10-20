@@ -44,7 +44,7 @@ app.get('/api/commands', (req, res) => {
                     { name: 'Required Discord.js : ', value: '```v14.15.3```' },
                     { name: 'Last Updated:', value: '```October 20 , 2024```' }
                 ],
-                image: 'https://imgur.com/DBVsO0f',
+                image: 'https://cdn.discordapp.com/attachments/1264134884432285766/1297492873146667028/glaceyt.png?ex=67161fe7&is=6714ce67&hm=84b6d0878496dfbf60eac8d7442b6c258802e9063df91db2b204725cee9c06ee&',
                 color: 0x0099ff,
                 footer: {
                     text: 'GlaceYT',
@@ -72,7 +72,7 @@ app.get('/api/commands', (req, res) => {
                     { name: 'Response', value: 'This is an example response.' }
                 ],
                 color: 0x0099ff,
-                image: 'https://imgur.com/DBVsO0f',
+                image: 'https://cdn.discordapp.com/attachments/1264134884432285766/1297492873146667028/glaceyt.png?ex=67161fe7&is=6714ce67&hm=84b6d0878496dfbf60eac8d7442b6c258802e9063df91db2b204725cee9c06ee&',
                 footer: {
                     text: 'GlaceYT',
                     icon_url: 'https://cdn.discordapp.com/attachments/1230824451990622299/1230824519220985896/6280-2.gif?ex=669f8328&is=669e31a8&hm=b64187333d5dcc5035293cac89df8ebdf7d56d49ac3ca6805e5da98e3c4b24d2&'
