@@ -7,7 +7,7 @@ const path = require('path');
 dotenv.config();
 const PORT = process.env.PORT || 10000;
 
-const expectedCommandsCount = 95;
+const expectedCommandsCount = 100;
 let serverOnline = true;
 
 app.use(cors());
@@ -39,10 +39,10 @@ app.get('/api/commands', (req, res) => {
                 title: 'Please Verify below details!',
                 description: '- When new update will be out we provide a zip file.\n- It will have code files and a manual to update your bot.\n- For help feel free to join our discord server.\n- Discord server : https://discord.gg/xQF9f9yUEM',
                 fields: [
-                    { name: 'Version : ', value: '```@1.0.0```' },
+                    { name: 'Version : ', value: '```@1.1.o```' },
                     { name: 'Required Node Version : ', value: '```v20```' },
                     { name: 'Required Discord.js : ', value: '```v14.15.3```' },
-                    { name: 'Last Updated:', value: '```August 07 , 2024```' }
+                    { name: 'Last Updated:', value: '```October 20 , 2024```' }
                 ],
                 image: 'https://cdn.discordapp.com/attachments/1264134884432285766/1270352605154902151/GlaceYT.gif?ex=66b40c4f&is=66b2bacf&hm=c1544d1e4583754696cbaab1e74d209159e5b243adaa4660eebc2629810715c6&',
                 color: 0x0099ff,
