@@ -39,7 +39,7 @@ app.get('/api/commands', (req, res) => {
                 title: 'Please Verify below details!',
                 description: '- When new update will be out we provide a zip file.\n- It will have code files and a manual to update your bot.\n- For help feel free to join our discord server.\n- Discord server : https://discord.gg/xQF9f9yUEM',
                 fields: [
-                    { name: 'Version : ', value: '```@1.1.o```' },
+                    { name: 'Version : ', value: '```@1.1.0```' },
                     { name: 'Required Node Version : ', value: '```v20```' },
                     { name: 'Required Discord.js : ', value: '```v14.15.3```' },
                     { name: 'Last Updated:', value: '```October 20 , 2024```' }
