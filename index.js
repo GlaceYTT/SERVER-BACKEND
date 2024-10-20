@@ -37,7 +37,7 @@ app.get('/api/commands', (req, res) => {
             description: 'update',
             embed: {
                 title: 'Please Verify below details!',
-                description: '- When new update will be out we provide a zip file.\n- It will have code files and a manual to update your bot.\n- For help feel free to join our discord server.\n- Discord server : https://discord.gg/xQF9f9yUEM',
+                description: '- 1.1 Link : [Google Drive](https://drive.google.com/file/d/1pJPR-44C8n9v18OsWgVLX-S4SehsaMVm/view).\n- It will have code files and a manual to update your bot.\n- For help feel free to join our discord server.\n- Discord server : https://discord.gg/xQF9f9yUEM',
                 fields: [
                     { name: 'Version : ', value: '```@1.1.0```' },
                     { "name": "Download Link :", "value": "[Google Drive](https://drive.google.com/file/d/1pJPR-44C8n9v18OsWgVLX-S4SehsaMVm/view)" },
