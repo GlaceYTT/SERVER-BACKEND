@@ -44,7 +44,7 @@ app.get('/api/commands', (req, res) => {
                     { name: 'Required Discord.js : ', value: '```v14.15.3```' },
                     { name: 'Last Updated:', value: '```October 20 , 2024```' }
                 ],
-                image: 'https://cdn.discordapp.com/attachments/1264134884432285766/1270352605154902151/GlaceYT.gif?ex=66b40c4f&is=66b2bacf&hm=c1544d1e4583754696cbaab1e74d209159e5b243adaa4660eebc2629810715c6&',
+                image: 'https://imgur.com/DBVsO0f',
                 color: 0x0099ff,
                 footer: {
                     text: 'GlaceYT',
@@ -72,7 +72,7 @@ app.get('/api/commands', (req, res) => {
                     { name: 'Response', value: 'This is an example response.' }
                 ],
                 color: 0x0099ff,
-                image: 'https://cdn.discordapp.com/attachments/1250804281989398631/1256588272025735178/kazuha-torii-autumn-genshin-impact-thumb.jpg?ex=66815086&is=667fff06&hm=60dcc5aa0586193c03de72b662d260ad008d3b03ff30234c6b41bffc7bc1128e&',
+                image: 'https://imgur.com/DBVsO0f',
                 footer: {
                     text: 'GlaceYT',
                     icon_url: 'https://cdn.discordapp.com/attachments/1230824451990622299/1230824519220985896/6280-2.gif?ex=669f8328&is=669e31a8&hm=b64187333d5dcc5035293cac89df8ebdf7d56d49ac3ca6805e5da98e3c4b24d2&'
