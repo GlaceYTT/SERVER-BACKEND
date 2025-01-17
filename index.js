@@ -7,7 +7,7 @@ const path = require('path');
 dotenv.config();
 const PORT = process.env.PORT || 10000;
 
-const expectedCommandsCount = 100;
+const expectedCommandsCount = 98;
 let serverOnline = true;
 
 app.use(cors());
