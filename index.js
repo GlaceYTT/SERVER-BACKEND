@@ -7,7 +7,7 @@ const path = require('path');
 dotenv.config();
 const PORT = process.env.PORT || 10000;
 
-const expectedCommandsCount = 98;
+const expectedCommandsCount = 71;
 let serverOnline = true;
 
 app.use(cors());
@@ -37,7 +37,7 @@ app.get('/api/commands', (req, res) => {
             description: 'update',
             embed: {
                 title: 'Please Verify below details!',
-                description: '- 1.2.1 Link : [SOON](https://www.ssrr.tech).\n- It will have code files and a manual to update your bot.\n- For help feel free to join our discord server.\n- Discord server : https://discord.gg/xQF9f9yUEM',
+                description: '- For help feel free to join our discord server.\n- Discord server : https://discord.gg/xQF9f9yUEM',
                 fields: [
                     { name: 'Version : ', value: '```@1.2.1```' },
                     { name: 'Download Link :', value: 'Soon' },
