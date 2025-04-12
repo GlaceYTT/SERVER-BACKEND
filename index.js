@@ -7,7 +7,7 @@ const path = require('path');
 dotenv.config();
 const PORT = process.env.PORT || 10000;
 
-const expectedCommandsCount = 71;
+const expectedCommandsCount = 90;
 let serverOnline = true;
 
 app.use(cors());
@@ -39,7 +39,7 @@ app.get('/api/commands', (req, res) => {
                 title: 'Please Verify below details!',
                 description: '- For help feel free to join our discord server.\n- Discord server : https://discord.gg/xQF9f9yUEM',
                 fields: [
-                    { name: 'Version : ', value: '```@1.2.1```' },
+                    { name: 'Version : ', value: '```@1.2.2```' },
                     { name: 'Download Link :', value: 'Soon' },
                     { name: 'Required Node Version : ', value: '```v20```' },
                     { name: 'Required Discord.js : ', value: '```v14.15.3```' },
