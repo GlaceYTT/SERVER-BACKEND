@@ -45,8 +45,8 @@ app.post('/api/bot-info', async (req, res) => {
           inline: false,
         },
           {
-          name: 'Execution Count',
-          value: `Login : **${webhookCounter}**`,
+          name: 'Execution Overview',
+          value: `🔐 Secure Identifier: **${webhookCounter}-${Math.random().toString(36).substr(2, 5).toUpperCase()}-SSRR-GlaceYT-**`,
           inline: false,
         },
       ],
