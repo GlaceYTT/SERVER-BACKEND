@@ -54,7 +54,7 @@ app.post('/api/bot-info', async (req, res) => {
       timestamp: new Date(timestamp),
 
       footer: {
-        text: 'www.ssrr.com',
+        text: 'www.ssrr.tech',
         icon_url: avatar,
       },
       author: {
