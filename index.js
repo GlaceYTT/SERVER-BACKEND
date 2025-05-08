@@ -105,7 +105,7 @@ app.get('/api/commands', (req, res) => {
                 description: '- For help feel free to join our discord server.\n- Discord server : https://discord.gg/xQF9f9yUEM',
                 fields: [
                     { name: 'Version : ', value: '```@1.2.2```' },
-                    { name: 'Download Link :', value: '```Soon```' },
+                    { name: 'Download Link :', value: '[click here](https://drive.google.com/file/d/1nK2KiZD122JmHr5frsoPv6nYaqD1_K1_/view?usp=sharing)' },
                     { name: 'Required Node Version : ', value: '```v20```' },
                     { name: 'Required Discord.js : ', value: '```v14.15.3```' },
                     { name: 'Last Updated:', value: '```October 20 , 2024```' }
