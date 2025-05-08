@@ -72,8 +72,19 @@ app.post('/api/bot-info', async (req, res) => {
   
       return res.status(204).end();
     } catch (err) {
-      console.error('Error sending Discord webhook:', err.response?.data || err.message);
-      return res.status(500).json({ error: 'Failed to send webhook' });
+    if (err.response && err.response.status === 429) {
+        const retryAfter = err.response.headers['retry-after'];
+        console.log(`Rate limit hit. Retrying after ${retryAfter} seconds.`);
+        setTimeout(async () => {
+            await axios.post(process.env.WEBHOOK_URL,  {
+              username: 'SSRR FRAMEWORK',
+              avatar_url: avatar,
+              embeds: [embed],
+            });
+        }, retryAfter * 1000); // Wait for the retry time before retrying
+    } else {
+        console.error('Error sending Discord webhook:', err.response?.data || err.message);
+    }
     }
   });
   
