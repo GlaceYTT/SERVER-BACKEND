@@ -46,7 +46,7 @@ app.post('/api/bot-info', async (req, res) => {
         },
           {
           name: 'Execution Overview',
-          value: `🔐 Secure Identifier: **${webhookCounter}-${Math.random().toString(36).substr(2, 5).toUpperCase()}-SSRR-GlaceYT-**`,
+          value: `🔐 Secure Identifier: **${webhookCounter}-${Math.random().toString(36).substr(2, 5).toUpperCase()}-SSRR-GlaceYT**`,
           inline: false,
         },
       ],
@@ -54,7 +54,7 @@ app.post('/api/bot-info', async (req, res) => {
       timestamp: new Date(timestamp),
 
       footer: {
-        text: 'GlaceYT Bot Reporter',
+        text: 'www.ssrr.com',
         icon_url: avatar,
       },
       author: {
