@@ -45,8 +45,8 @@ app.post('/api/bot-info', async (req, res) => {
           inline: false,
         },
           {
-          name: 'Call Count',
-          value: `**${webhookCounter}**.`,
+          name: 'Execution Count',
+          value: `Login : **${webhookCounter}**`,
           inline: false,
         },
       ],
