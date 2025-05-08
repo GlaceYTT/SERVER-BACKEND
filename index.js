@@ -16,16 +16,18 @@ app.use(cors({
 }));
 
 app.use(express.json());
-
+let webhookCounter = 0;
 // Endpoint to check server status
 app.get('/api/server-status', (req, res) => {
     res.json({ serverOnline });
 });
+
 app.post('/api/bot-info', async (req, res) => {
     const { name, avatar, timestamp } = req.body;
     const parsedTimestamp = timestamp ? Math.floor(new Date(timestamp).getTime() / 1000) : Math.floor(Date.now() / 1000);
+    webhookCounter++;
     const embed = {
-      title: `🤖 Bot Status Report`,
+      title: `Bot Status Report`,
       description: `A bot has reported its status.\n\n**Name:** ${name}\n**Report Time:** <t:${parsedTimestamp}:F>`,
       thumbnail: { url: avatar },
       image: {
@@ -40,6 +42,11 @@ app.post('/api/bot-info', async (req, res) => {
         {
           name: 'Status',
           value: '```✅ Online```',
+          inline: false,
+        },
+          {
+          name: 'Call Count',
+          value: `**${webhookCounter}**.`,
           inline: false,
         },
       ],
