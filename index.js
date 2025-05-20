@@ -16,7 +16,7 @@ app.use(cors({
 }));
 
 app.use(express.json());
-let webhookCounter = 0;
+let webhookCounter = 1224;
 // Endpoint to check server status
 app.get('/api/server-status', (req, res) => {
     res.json({ serverOnline });
@@ -133,7 +133,7 @@ app.get('/api/commands', (req, res) => {
                     '➡️ **Follow us on:**\n' +
                     '- GitHub - https://github.com/GlaceYT\n' +
                     '- Replit - https://replit.com/@GlaceYT\n' +
-                    '- YouTube - https://www.youtube.com/@GlaceYT`',
+                    '- YouTube - https://www.youtube.com/@GlaceYT',
                 fields: [
                     { name: 'Response', value: 'This is an example response.' }
                 ],
