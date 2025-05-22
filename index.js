@@ -7,7 +7,7 @@ const axios   = require('axios');
 dotenv.config();
 const PORT = process.env.PORT || 10000;
 
-const expectedCommandsCount = 95;
+const expectedCommandsCount = 86;
 let serverOnline = true;
 
 app.use(cors({
