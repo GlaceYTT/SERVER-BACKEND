@@ -59,7 +59,7 @@ app.post('/api/bot-info', async (req, res) => {
       },
       author: {
         name: '🚀 GlaceYT [ ALL IN ONE ]',
-        icon_url: 'https://cdn.discordapp.com/emojis/1334648756649590805.png',
+        icon_url: 'https://i.ibb.co/9krKGyHh/TRANSPARENT.png',
       },
     };
   
@@ -114,11 +114,11 @@ app.get('/api/commands', (req, res) => {
                 color: 0x0099ff,
                 footer: {
                     text: 'GlaceYT',
-                    icon_url: 'https://cdn.discordapp.com/emojis/1334648756649590805.png'
+                    icon_url: 'https://i.ibb.co/9krKGyHh/TRANSPARENT.png'
                 },
                 author: {
                     name: 'ALL IN ONE',
-                    icon_url: 'https://cdn.discordapp.com/emojis/1334648756649590805.png'
+                    icon_url: 'https://i.ibb.co/9krKGyHh/TRANSPARENT.png'
                 }
             }
         },
@@ -141,11 +141,11 @@ app.get('/api/commands', (req, res) => {
                 image: 'https://i.ibb.co/fVxXvnN4/11.png',
                 footer: {
                     text: 'GlaceYT',
-                    icon_url: 'https://cdn.discordapp.com/emojis/1334648756649590805.png'
+                    icon_url: 'https://i.ibb.co/9krKGyHh/TRANSPARENT.png'
                 },
                 author: {
                     name: 'ALL IN ONE [ GlaceYT ]',
-                    icon_url: 'https://cdn.discordapp.com/emojis/1334648756649590805.png'
+                    icon_url: 'https://i.ibb.co/9krKGyHh/TRANSPARENT.png'
                 }
             }
         },
