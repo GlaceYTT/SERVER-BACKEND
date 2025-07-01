@@ -16,7 +16,7 @@ app.use(cors({
 }));
 
 app.use(express.json());
-let webhookCounter = 1374;
+let webhookCounter = 7220;
 // Endpoint to check server status
 app.get('/api/server-status', (req, res) => {
     res.json({ serverOnline });
