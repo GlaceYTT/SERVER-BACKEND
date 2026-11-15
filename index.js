@@ -6,7 +6,7 @@ const path = require('path');
 const axios = require('axios');
 const mongoose = require('mongoose');
 dotenv.config();
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT || 8888;
 
 // === MongoDB Connection ===
 mongoose
@@ -67,7 +67,7 @@ app.post('/api/verify-key', async (req, res) => {
       box: [
         "❌ Verification Failed!",
         "Please provide all required details and try again.",
-        "Visit https://yourwebsite.com to manage your account."
+        "Visit https://fluenosity.com to manage your account."
       ]
     });
   }
@@ -82,7 +82,7 @@ app.post('/api/verify-key', async (req, res) => {
         box: [
           "❌ Verification Failed!",
           "No user account found for this Discord ID.",
-          "Visit https://glaceyt.com to register/login."
+          "Visit https://fluenosity.com to register/login."
         ]
       });
     }
@@ -101,7 +101,7 @@ app.post('/api/verify-key', async (req, res) => {
         box: [
           "❌ Verification Failed!",
           "The API key is invalid or inactive.",
-          "Visit https://glaceyt.com to generate a new key."
+          "Visit https://fluenosity.com to generate a new key."
         ]
       });
     }
@@ -118,7 +118,7 @@ app.post('/api/verify-key', async (req, res) => {
       box: [
         "✅ Verification Successful!",
         `Welcome back, ${userDoc.username || 'User'}!`,
-        "Visit https://glaceyt.com to manage your account."
+        "Visit https://fluenosity.com to manage your account."
       ],
       user: {
         mongoUserId: userDoc._id.toString(),
@@ -137,7 +137,7 @@ app.post('/api/verify-key', async (req, res) => {
       box: [
         "❌ Verification Failed!",
         "Something went wrong on our end.",
-        "Visit https://glaceyt.com contact support."
+        "Visit https://fluenosity.com contact support."
       ]
     });
   }
@@ -222,11 +222,11 @@ app.get('/api/commands', (req, res) => {
         description:
           '- For help feel free to join our discord server.\n- Discord server : https://discord.gg/xQF9f9yUEM',
         fields: [
-          { name: 'Version : ', value: '```@1.4.0.1```' },
+          { name: 'Version : ', value: '```@2.0.0```' },
           {
             name: 'Download Link :',
             value:
-              '[click here](https://drive.google.com/file/d/1nK2KiZD122JmHr5frsoPv6nYaqD1_K1_/view?usp=sharing)'
+              '[click here](https://fluenosity.com/allinone)'
           },
           { name: 'Required Node Version : ', value: '```v20```' },
           { name: 'Required Discord.js : ', value: '```v14.15.3```' },
@@ -235,7 +235,7 @@ app.get('/api/commands', (req, res) => {
         image: 'https://i.ibb.co/fVxXvnN4/11.png',
         color: 0x0099ff,
         footer: {
-          text: 'GlaceYT',
+          text: 'Shiva',
           icon_url: 'https://i.ibb.co/9krKGyHh/TRANSPARENT.png'
         },
         author: {
@@ -257,5 +257,5 @@ app.get('/', (req, res) => {
 
 // === Start Server ===
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`🚀 Server running on http://0.0.0.0:${PORT}`);
+  console.log(`🚀 Server running on http://localhost:${PORT}`);
 });
